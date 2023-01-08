@@ -38,9 +38,13 @@ def guess_coin_side():
     return str.capitalize(guess)
 
 def main_menu():
-    pass
+    while True:
+        choice = input("Welcome to this game. Please type the corresponding number to make a play choice:\n1. Coinflip\n2. View coinflip scores\n3. Play 'dice roll'\n4. View 'dice roll' scores\n")
+        if choice.isdigit():
+            choice = int(choice)
+            break
 
 def main():
-    coin_flip()
+    main_menu()
 
 main()
