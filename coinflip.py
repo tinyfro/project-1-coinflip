@@ -22,7 +22,7 @@ def coin_flip():
         print(guess + ", was the incorrect guess! Please try again.")
     else:
         print(guess + ", was the correct answer!")
-    main()
+    coin_flip()
 
 def guess_coin_side():
     while True:
