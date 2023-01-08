@@ -14,31 +14,33 @@
 
 import random
 
-
-def generate_coin_flip():
-
-    result = random.randint(1,2)
-
-    if result == 1:
-        return "Heads!"
+def coin_flip():
+    guess = guess_coin_side()
+    answers = ["Heads", "Tails"]
+    rand_flip = random.choice(answers)
+    if (rand_flip == "Heads" and guess == "Tails") or (rand_flip == "Tails" and guess == "Heads"):
+        print(guess + ", was the incorrect guess! Please try again.")
     else:
-        return "Tails!"
+        print(guess + ", was the correct answer!")
+    main()
 
+def guess_coin_side():
+    while True:
+        guess = input("I flipped a coin, enter 'Heads' or 'Tails' to guess which side it landed on: \n")
+        if isinstance(guess, str):
+            guess = str(guess)
+            if guess == "Heads" or guess == "Tails" or guess == "heads" or guess == "tails":
+                break
+            else:
+                print("You must enter 'Heads' or 'Tails'. Try again.")
+        else:
+            print("You must enter 'Heads' or 'Tails'. Try again.")
+    return str.capitalize(guess)
 
-def guess_coin_flip():
+def main_menu():
+    pass
 
-    guess = input("Heads or Tails? ")
+def main():
+    coin_flip()
 
-    if guess == "Heads" or "heads":
-        guess_result(1)
-    else:
-        guess_result(2)
-
-
-def guess_result(result):
-    if generate_coin_flip() == "Heads!":
-        print("Heads is correct!")
-    else:
-        print("Tails is correct!")
-
-guess_coin_flip()
+main()
