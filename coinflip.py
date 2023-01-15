@@ -1,16 +1,10 @@
-# Project information: https://discuss.codecademy.com/t/computer-science-independent-project-1-coin-flip/419951?_gl=1*1hvpca4*_ga*NzE2MTE1NjM5Ny4xNjcyMzY3MDk3*_ga_3LRZM6TM9L*MTY3MjgyMzUyNC4xMC4xLjE2NzI4MzAzODguNjAuMC4w
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-# Basic requirements:
-# As a user I want to be able to guess the outcome of a random coin flip(heads/tails) DONE
-# As a user I want to clearly see the result of the coin flip. DONE
-# As a user I want to clearly see whether or not I guessed correctly. DONE
+"""coinflip.py: Affectionately named 'coinflip', but includes a dice roll game. Educational project. Just for fun. Kinda got some help from ChatGPT but we won't speak about that..."""
 
-# Intermediate challenges:
-# User Story: As a user I want to clearly see the updated guess history (correct count/total count). DONE
-# User Story: As a user I want to be able to quit the game or go again after each cycle.
-
-# Advanced challenge:
-# User Story: As a user I want to be able to guess the outcome of a 6-sided dice roll (1-6), with the same feature set as the coin flip (see above).
+__author__      = "Adam Zulic"
+__copyright__   = "Copyright 2023, tinyfro"
 
 import random, os
 
