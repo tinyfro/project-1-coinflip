@@ -6,7 +6,7 @@
 __author__      = "tinyfro"
 __copyright__   = "Copyright 2023, tinyfro"
 
-import random, os
+import os, random
 
 scores = {"coin_flip": [], "dice_roll": []}
 
