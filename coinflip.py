@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""coinflip.py: Affectionately named 'coinflip', but includes a dice roll game. Educational project. Just for fun. Kinda got some help from ChatGPT but we won't speak about that... At least ChatGPT explains its reasoning for making certain changes :)"""
+"""coinflip.py: Affectionately named 'coinflip', but includes a dice roll game. Educational project. Just for fun."""
 
 __author__      = "tinyfro"
 __copyright__   = "Copyright 2023, tinyfro"
